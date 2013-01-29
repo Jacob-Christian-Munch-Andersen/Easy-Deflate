@@ -1,5 +1,6 @@
 /**
 Copyright (c) 2013, Specialisterne.
+http://specialisterne.com/dk/
 All rights reserved.
 Authors:
 Jacob Christian Munch-Andersen
@@ -24,6 +25,7 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 **/
+// For information and latest version see: https://github.com/Jacob-Christian-Munch-Andersen/Easy-Deflate
 zip={}
 function UTF8encode(str){
 	var out=[]
