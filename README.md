@@ -7,7 +7,10 @@ Use:
 ====
 Copy the script inclusion from demo.html.<br>
 Call deflate(foo) in order to compress a string.<br>
-Call inflate(bar) in order to decompress a string compressed in this manner.
+Call inflate(bar) in order to decompress a string compressed in this manner.<br>
+Both functions return a string, or null in case of illegal input.
+
+The compression works by first UTF-8 encoding the input, then compressing it to a raw deflate stream. The stream is then base64 encoded, and finally the identifier "rawdeflate," is prepended.
 
 Credits:
 ========
