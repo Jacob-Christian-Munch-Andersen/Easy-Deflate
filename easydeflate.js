@@ -190,15 +190,20 @@ function inflate(dfl){
 	catch(e){
 		return null
 	}
-	for(a=0;a<dfls.length;a+=50000){
-		b=new Uint8Array(Math.min(50000,dfls.length-a))
-		for(c=0;c<b.length;c++){
-			b[c]=dfls.charCodeAt(c+a)
+	try{
+		for(a=0;a<dfls.length;a+=50000){
+			b=new Uint8Array(Math.min(50000,dfls.length-a))
+			for(c=0;c<b.length;c++){
+				b[c]=dfls.charCodeAt(c+a)
+			}
+			d=unzipper.append(b)
+			if(d.length){
+				resulta.push(d)
+			}
 		}
-		d=unzipper.append(b)
-		if(d.length){
-			resulta.push(d)
-		}
+		return UTF8decodeA(resulta)
 	}
-	return UTF8decodeA(resulta)
+	catch(e){
+		return null
+	}
 }
