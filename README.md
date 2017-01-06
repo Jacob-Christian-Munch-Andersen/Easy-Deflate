@@ -1,3 +1,8 @@
+Deprecated
+==========
+
+This library was probably the best available widely browser-compatible JavaScript compression library at its release, this in no longer the case. The [Pako](https://github.com/nodeca/pako) library seems superior in every way. For creating zip files [JSZip](http://stuk.github.io/jszip/) is a useful extension of Pako. Finally, an easy-to-use alternative with a very small code size, but slightly larger output, is my own [KISSC](https://github.com/NoHatCoder/KISSC). 
+
 Easy-Deflate
 ============
 
